@@ -1,0 +1,51 @@
+.header {
+    height: 56px;
+    margin: 0 auto;
+    background: #d44a1e;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.header .inner-header {
+    width: 1030px;
+    height: 50px;
+    box-shadow: 0px 0px 67px -4px rgba(119,15,16,1);
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(142,54,26,1) 0%, rgba(212,74,30,1) 35%);
+}
+
+.header .inner-header .logo {
+    position: absolute;
+    left: 4px;
+}
+
+.header .inner-header .log {
+    position: absolute;
+    right: 8px;
+    height: auto;
+}
+
+.header .inner-header .log button {
+    border: none;
+    outline: none;
+    height: 24px;
+    width: 60px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 10px 24px 0px rgba(105,33,10,1);
+    background: #69210a;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.header .inner-header .log button:hover{
+    background: #311005;
+    box-shadow: 0px 18px 24px 0px rgb(58, 17, 5);
+}
+
+.header .inner-header .logo img {
+    height: 30px;
+}
