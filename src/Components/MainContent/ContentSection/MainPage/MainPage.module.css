@@ -1,0 +1,13 @@
+.no-logged-main-page h3 {
+    text-transform: uppercase;
+    color: #69210a;
+}
+
+.no-logged-main-page p {
+    text-transform: capitalize;
+    color: #282828;
+    font-weight: bold;
+}
+.no-logged-main-page ul {
+    list-style-type: circle;
+}
