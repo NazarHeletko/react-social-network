@@ -15,10 +15,20 @@ let MainPage = (props) => {
                     <li>Redux-thunk</li>
                     <li>Reselect</li>
                 </ul>
+                <p>used container functions:</p>
+                <ul>
+                    <li>Connect</li>
+                    <li>withRouter</li>
+                    <li>reduxForm</li>
+                </ul>
                 <p>Other features:</p>
                 <ul>
                     <li>Only functional components (hooks)</li>
+                    <li>High order components</li>
+                    <li>Form validation</li>
+                    <li>Selectors</li>
                 </ul>
+                <button>go</button>
             </div>
         </div>
     )
