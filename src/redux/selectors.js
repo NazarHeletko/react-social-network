@@ -16,3 +16,7 @@ const isAuthDataSimpleSelector = (state) => {
 export const isAuthDataSelector = createSelector(isAuthDataSimpleSelector, (authData)=>{
     return authData;
 });
+
+export const isStatusLoadingSimpleSelector = (state) => {
+    return state.status.isStatusLoading;
+};

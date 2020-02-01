@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./MainPage.module.css";
-import Status from "./Status/Status";
+import StatusContainer from "./Status/StatusContainer";
 
 let MainPage = (props) => {
     return(
@@ -34,7 +34,7 @@ let MainPage = (props) => {
                 </div> :
 
                 <div className={style['logged-main-page']}>
-                    <Status/>
+                    <StatusContainer/>
                 </div>
 
             }
