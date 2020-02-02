@@ -1,0 +1,23 @@
+.posts textarea {
+    display: block;
+}
+.posts button {
+    border: none;
+    outline: none;
+    height: 24px;
+    width: 60px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 2px 10px 0px rgba(105,33,10,1);
+    background: #69210a;
+    color: white;
+ }
+.all-posts div {
+    box-shadow: 0px 0px 19px -5px rgba(119, 15, 16, 0.41);
+    padding: 5px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+.all-posts div p {
+    margin: 0;
+}

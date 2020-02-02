@@ -28,3 +28,6 @@ export const isStatusLoadingSimpleSelector = (state) => {
 export const statusTextSimpleSelector = (state) => {
     return state.status.statusText
 };
+export const postsSimpleSelector = (state) => {
+    return state.posts.posts;
+};

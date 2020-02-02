@@ -28,3 +28,18 @@
     background: #311005;
     box-shadow: 0px 18px 24px 0px rgb(58, 17, 5);
 }
+
+.logged-main-page h3 {
+    color: #69210a;
+    margin-bottom: 10px;
+}
+.logged-main-page .posts-title {
+    margin-top: 10px;
+}
+.posts-wrapper {
+    height: 500px;
+    background: #da9e772b;
+    border-radius: 6px;
+    box-shadow: 0px 0px 19px -5px rgba(119, 15, 16, 0.41);
+    padding: 30px;
+}
