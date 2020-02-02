@@ -12,12 +12,12 @@ let inputWrapper = ({input, meta, ...props}) => {
     )
 };
 
-const maxLength55 = maxLenghtCreator(55);
+const maxLength71 = maxLenghtCreator(71);
 
 let StatusForm = (props) => {
     return(
         <form onSubmit={props.handleSubmit}>
-            <Field validate={[maxLength55]} autoFocus={true} onBlur={()=>{
+            <Field validate={[maxLength71]} autoFocus={true} onBlur={()=>{
                 props.setActivatingModeCallBack(false);
                 props.handleSubmit();
             }} placeholder='change status' component={inputWrapper} name='status'/>

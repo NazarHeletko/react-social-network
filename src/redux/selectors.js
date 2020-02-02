@@ -13,10 +13,18 @@ export const isAuthSelector = createSelector(isAuthSimpleSelector, (isAuth)=>{
 const isAuthDataSimpleSelector = (state) => {
     return state.isAuth.authData;
 };
+
+export const authUserIdSimpleSelector = (state) => {
+    return state.isAuth.authData.id;
+};
 export const isAuthDataSelector = createSelector(isAuthDataSimpleSelector, (authData)=>{
     return authData;
 });
 
 export const isStatusLoadingSimpleSelector = (state) => {
     return state.status.isStatusLoading;
+};
+
+export const statusTextSimpleSelector = (state) => {
+    return state.status.statusText
 };

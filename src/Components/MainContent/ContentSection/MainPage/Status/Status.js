@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import style from './Status.module.css';
 import StatusForm from "./StatusForm";
 import Preloader from "../../../../common/Preloader/Preloader";
@@ -7,27 +7,36 @@ let Status = (props) => {
     const [activatingMode,setActivatingMode] = useState(false);
 
     let onSubmit = (formData) => {
-        console.log(formData);
+        if(!formData.status){
+            return
+        }
+        props.setStatusThunk(formData.status);
     };
+
+    useEffect(()=>{
+        props.getStatusThunk(props.uId);
+    }, [props.statusText]);
 
     let setActivatingModeCallBack = () => {
         setActivatingMode(false);
     };
     return(
         <>
-            {!props.isStatusLoading ?
+            {props.isStatusLoading ?
                 <div className={style.status}>
-                    {!activatingMode ?
+                    {activatingMode ?
                         <div className={style['status-field']}>
                             <StatusForm setActivatingModeCallBack={setActivatingModeCallBack} onSubmit={onSubmit}/>
                         </div>
                         :
                         <div className={style['status-text']}>
-                            <span onClick={()=>setActivatingMode(true)}>Це текст статусу, ще не вмерла україни ні слава ні воля, ще у на будуть зарплати по 2000 доларів</span>
+                            <span onClick={()=>setActivatingMode(true)}>{props.statusText}</span>
                         </div>
                     }
                 </div> :
-                <Preloader/>
+                <div className={style.preloader}>
+                    <Preloader/>
+                </div>
             }
         </>
     )
