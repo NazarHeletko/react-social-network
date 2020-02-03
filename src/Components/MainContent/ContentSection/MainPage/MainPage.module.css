@@ -37,7 +37,7 @@
     margin-top: 10px;
 }
 .posts-wrapper {
-    height: 500px;
+    height: auto;
     background: #da9e772b;
     border-radius: 6px;
     box-shadow: 0px 0px 19px -5px rgba(119, 15, 16, 0.41);

@@ -1,3 +1,4 @@
+import {reset} from 'redux-form';
 const ADD_POST = 'ADD_POST';
 
 let initialState = {
@@ -9,12 +10,23 @@ const postsReducer = (state=initialState, action) => {
         case ADD_POST:
             return{
                 ...state,
-                posts: [...state.posts, action.posts]
+                posts: [...state.posts, action.post]
             };
         default:
             return state;
     }
 };
 
+const addPostAC = (post) => {
+    return{
+        type: ADD_POST,
+        post
+    }
+};
+
+export const addPostThunk = (post) => (dispatch) => {
+    dispatch(addPostAC(post));
+    dispatch(reset('postsData'));
+};
 
 export default postsReducer;
