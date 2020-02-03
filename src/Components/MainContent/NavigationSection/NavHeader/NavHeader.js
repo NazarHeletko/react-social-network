@@ -17,6 +17,7 @@ let NavHeader = (props) => {
                     <p>{props.authData.email}</p>
                 </div>
             }
+
         </div>
     )
 };

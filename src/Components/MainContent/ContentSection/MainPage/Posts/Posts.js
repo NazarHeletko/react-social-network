@@ -4,6 +4,7 @@ import PostsForm from "./PostsForm";
 
 let Posts = (props) => {
     let onSubmit = (formData) => {
+      if(!formData.singlePost) return;
       props.addPostThunk(formData.singlePost);
     };
     return(
