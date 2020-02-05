@@ -31,6 +31,9 @@ export const statusTextSimpleSelector = (state) => {
 export const postsSimpleSelector = (state) => {
     return state.posts.posts;
 };
-export const linkControlSimpleSelector = (state) => {
-    return state.linkControl.checkingArr;
+export const profileDataSimpleSelector = (state) => {
+    return state.profileData.profileData;
+};
+export const isProfileLoadSimpleSelector = (state) => {
+    return state.profileData.isProfileLoad;
 };

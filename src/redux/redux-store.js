@@ -4,14 +4,14 @@ import thunkMiddleware from 'redux-thunk';
 import {reducer as formReducer} from 'redux-form';
 import statusReducer from "./status-reducer";
 import postsReducer from "./posts-reducer";
-import linkControlReducer from "./link-control-reducer";
+import profileReducer from "./profile-reducer";
 
 let reducers = combineReducers({
     isAuth: isAuthReducer,
     form: formReducer,
     status: statusReducer,
     posts: postsReducer,
-    linkControl: linkControlReducer
+    profileData: profileReducer
 });
 
 let store = createStore(reducers, applyMiddleware(thunkMiddleware));

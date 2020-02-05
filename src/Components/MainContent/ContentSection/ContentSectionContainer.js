@@ -4,7 +4,7 @@ import {linkControlSimpleSelector} from "../../../redux/selectors";
 
 let mapStateToProps = (state) => {
     return{
-        checkingArr: linkControlSimpleSelector(state)
+
     }
 };
 

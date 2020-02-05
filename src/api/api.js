@@ -25,3 +25,7 @@ export const statusData = {
         return instance.put('profile/status', {status})
     }
 };
+
+export const getUserProfile = (uId) => {
+    return instance.get(`profile/${uId}`);
+};

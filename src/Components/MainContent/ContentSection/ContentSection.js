@@ -7,15 +7,8 @@ import ProfileContainer from "./Profile/ProfileContainer";
 let ContentSection = (props) => {
     return(
         <div className={style['content-section']}>
-            {
-                props.checkingArr.length === 0 ?
-                  <Route path="/" render={()=><MainPageContainer/>}/> :
-                <>
-                    <Route path="/profile" render={()=><ProfileContainer/>}/>
-                </>
-            }
-
-
+                  <Route exact path="/" render={()=><MainPageContainer/>}/>
+                  <Route path="/profile/:uId" render={()=><ProfileContainer/>}/>
         </div>
     )
 };

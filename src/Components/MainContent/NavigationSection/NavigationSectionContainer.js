@@ -1,9 +1,11 @@
 import {connect} from 'react-redux';
 import NavigationSection from "./NavigationSection";
-import {linkActivateAC, linkDeactivateAC} from "../../../redux/link-control-reducer";
+import {authUserIdSimpleSelector} from "../../../redux/selectors";
 
 let mapStateToProps = (state) => {
-
+    return{
+        uId: authUserIdSimpleSelector(state)
+    }
 };
 
-export default connect(mapStateToProps, {linkDeactivateAC, linkActivateAC})(NavigationSection);
+export default connect(mapStateToProps, {})(NavigationSection);

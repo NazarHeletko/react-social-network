@@ -4,12 +4,14 @@
     <list default="true" id="e108baf9-fef8-419a-b224-a5dea956150f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/ContentSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/ContentSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/MainPage/Posts/Posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/MainPage/Posts/Posts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MainContent/MainContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/MainContent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MainContent/NavigationSection/NavHeader/NavHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/NavigationSection/NavHeader/NavHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MainContent/NavigationSection/NavHeader/NavHeader.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/NavigationSection/NavHeader/NavHeader.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/ContentSectionContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/ContentSectionContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/Profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/Profile/Profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/Profile/ProfileContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/Profile/ProfileContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/MainContent/NavigationSection/NavigationSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/NavigationSection/NavigationSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MainContent/NavigationSection/NavigationSection.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/NavigationSection/NavigationSection.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MainContent/NavigationSection/NavigationSectionContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/NavigationSection/NavigationSectionContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/link-control-reducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/profile-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profile-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/selectors.js" afterDir="false" />
     </list>
@@ -80,7 +82,9 @@
       <workItem from="1580671021313" duration="428000" />
       <workItem from="1580671476360" duration="1380000" />
       <workItem from="1580672905170" duration="115000" />
-      <workItem from="1580718284386" duration="21776000" />
+      <workItem from="1580718284386" duration="21930000" />
+      <workItem from="1580811311371" duration="6201000" />
+      <workItem from="1580894817968" duration="13321000" />
     </task>
     <servers />
   </component>
