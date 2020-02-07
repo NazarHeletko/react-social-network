@@ -17,24 +17,24 @@ let Profile = (props) => {
     let lookingJobExist = props.profileData.lookingForAJob;
     let descriptionExist = props.profileData.lookingForAJobDescription;
     return(
-        <>
+        <div className={style['profile-wrapper']}>
             {props.isProfileLoad ?
                 <div className={style.profile}>
                     <img src={props.profileData.photos.large === null ? noPhotoUser : props.profileData.photos.large}/>
-                    <h3>{props.profileData.fullName}</h3>
-                    <p>{`About me: ${abutMeExist ? abutMeExist : 'no data'}`}</p>
+                    <h2>{props.profileData.fullName}</h2>
+                    <p><span>About me: </span>span>{`${abutMeExist ? abutMeExist : 'no data'}`}</p>
                     <div className={style['social-btns']}>
                         <a href='http://facebook.com/'><img src={facebookLogo} /></a>
                         <a href='https://www.instagram.com/'><img src={instagramLogo} /></a>
                         <a href='https://twitter.com/'><img src={twetterLogo} /></a>
                         <a href='https://github.com/'><img src={githubLogo} /></a>
                     </div>
-                    <p>{`Looking for a job: ${lookingJobExist ? lookingJobExist : 'no data'}`}</p>
-                    <p>{`My skils: ${descriptionExist ? descriptionExist : 'no data'}`}</p>
+                    <p><span>Looking for a job: </span>{`${lookingJobExist ? lookingJobExist : 'no data'}`}</p>
+                    <p><span>My skils: </span>{`${descriptionExist ? descriptionExist : 'no data'}`}</p>
                 </div> :
                 <Preloader/>
             }
-        </>
+        </div>
     )
 };
 

@@ -37,3 +37,15 @@ export const profileDataSimpleSelector = (state) => {
 export const isProfileLoadSimpleSelector = (state) => {
     return state.profileData.isProfileLoad;
 };
+
+export const totalUsersSimpleSelector = (state) => {
+    return state.users.totalUsers
+};
+
+export const usersOnPageSimpleSelector = (state) => {
+    return state.users.usersOnPage
+};
+
+export const activePageSimpleSelector = (state) => {
+    return state.users.activePage
+};

@@ -5,13 +5,15 @@ import {reducer as formReducer} from 'redux-form';
 import statusReducer from "./status-reducer";
 import postsReducer from "./posts-reducer";
 import profileReducer from "./profile-reducer";
+import usersReducer from "./users-reducer";
 
 let reducers = combineReducers({
     isAuth: isAuthReducer,
     form: formReducer,
     status: statusReducer,
     posts: postsReducer,
-    profileData: profileReducer
+    profileData: profileReducer,
+    users: usersReducer
 });
 
 let store = createStore(reducers, applyMiddleware(thunkMiddleware));

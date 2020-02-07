@@ -29,3 +29,9 @@ export const statusData = {
 export const getUserProfile = (uId) => {
     return instance.get(`profile/${uId}`);
 };
+
+export const users = {
+    getTotalPagesNumb(){
+        return instance.get('users');
+    }
+};

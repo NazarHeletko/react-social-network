@@ -1,0 +1,20 @@
+.profile {
+    padding: 30px;
+}
+.profile h2 {
+    margin-top: 15px;
+}
+.profile .social-btns img {
+    height: 30px;
+    margin: 4px;
+}
+.profile span {
+    font-weight: bold;
+}
+
+.profile-wrapper {
+    height: 100%;
+}
+.profile-wrapper img[alt="preloader"] {
+    height: 42px;
+}
