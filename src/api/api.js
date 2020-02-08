@@ -32,6 +32,15 @@ export const getUserProfile = (uId) => {
 
 export const users = {
     getTotalPagesNumb(){
-        return instance.get('users');
+        return instance.get(`users`);
+    },
+    getTotalUsersApi(page = 1, count = 6){
+        return instance.get(`users?page=${page}&count=${count}`);
+    },
+    followApi(uId){
+        return instance.post(`follow/${uId}`);
+    },
+    unfollowApi(uId){
+        return instance.delete(`follow/${uId}`);
     }
 };

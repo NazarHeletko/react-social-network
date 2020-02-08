@@ -5,7 +5,7 @@ import {
     totalUsersSimpleSelector,
     usersOnPageSimpleSelector
 } from "../../../../../redux/selectors";
-import {setActivePageAC, setTotalUsersThunk} from "../../../../../redux/users-reducer";
+import {getUsersThunk, setActivePageAC, setTotalUsersThunk} from "../../../../../redux/users-reducer";
 
 let mapStateToProps = (state) => {
     return{
@@ -15,4 +15,4 @@ let mapStateToProps = (state) => {
     }
 };
 
-export default connect(mapStateToProps, {setActivePageAC, setTotalUsersThunk})(Paginator);
+export default connect(mapStateToProps, {setActivePageAC, setTotalUsersThunk, getUsersThunk})(Paginator);

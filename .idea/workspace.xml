@@ -3,14 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="e108baf9-fef8-419a-b224-a5dea956150f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/ContentSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/ContentSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/Profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/Profile/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/Profile/Profile.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/Profile/Profile.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MainContent/NavigationSection/NavigationSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/NavigationSection/NavigationSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/common/Preloader/Preloader.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/common/Preloader/Preloader.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/Users/Paginator/Paginator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/Users/Paginator/Paginator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/Users/Paginator/PaginatorContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/Users/Paginator/PaginatorContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/Users/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/Users/Users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/Users/Users.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/Users/Users.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/Users/UsersContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/Users/UsersContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/selectors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/users-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-reducer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +83,8 @@
       <workItem from="1580811311371" duration="6201000" />
       <workItem from="1580894817968" duration="13941000" />
       <workItem from="1580981915975" duration="16552000" />
-      <workItem from="1581071340830" duration="5947000" />
+      <workItem from="1581071340830" duration="10487000" />
+      <workItem from="1581151345463" duration="18952000" />
     </task>
     <servers />
   </component>

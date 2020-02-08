@@ -2,15 +2,11 @@ import React, {useEffect, useState} from 'react';
 import style from './Paginator.module.css';
 
 let Paginator = ({portionSize = 10, totalUsers, usersOnPage, activePage,...props}) => {
-
-
-
     let numberOfBtns = Math.ceil(totalUsers/usersOnPage);
     let btnsArr = [];
     for(let i = 1; i <= numberOfBtns; i++){
         btnsArr.push(i);
     }
-
     let portionCount = Math.ceil(numberOfBtns/portionSize);
     let [portionNumber, setPortionNumber] = useState(3);
     let leftPortionPageNumber = (portionNumber - 1) * portionSize + 1;
@@ -20,6 +16,10 @@ let Paginator = ({portionSize = 10, totalUsers, usersOnPage, activePage,...props
         setPortionNumber(1);
         props.setTotalUsersThunk();
     },[totalUsers]);
+
+    let getUsersOnPageChange = (page) => {
+        props.getUsersThunk(page);
+    };
 
     return(
         <div className={style.paginator}>
@@ -31,6 +31,7 @@ let Paginator = ({portionSize = 10, totalUsers, usersOnPage, activePage,...props
                         return (
                             <button onClick={()=>{
                                 props.setActivePageAC(item);
+                                getUsersOnPageChange(item);
                             }} className={activePage === item ? style.active : null}>{item}</button>
                         )
                     })

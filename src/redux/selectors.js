@@ -49,3 +49,13 @@ export const usersOnPageSimpleSelector = (state) => {
 export const activePageSimpleSelector = (state) => {
     return state.users.activePage
 };
+
+export const usersDataSimpleSelector = (state) => {
+    return state.users.usersData
+};
+export const isUserLoadedSimpleSelector = (state) => {
+      return state.users.isUsersLoaded
+};
+export const btnDisabledSimpleSelector = (state) => {
+    return state.users.btnDisabled
+};
