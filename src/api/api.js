@@ -14,6 +14,9 @@ export const auth = {
     },
     logOut(){
         return instance.delete('auth/login');
+    },
+    logInApi(email, password, rememberMe){
+        return instance.post('auth/login', {email, password, rememberMe});
     }
 };
 

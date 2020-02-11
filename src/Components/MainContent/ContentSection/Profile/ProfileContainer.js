@@ -2,9 +2,9 @@ import {connect} from 'react-redux';
 import Profile from "./Profile";
 import {getProfileDataThunk} from "../../../../redux/profile-reducer";
 import {withRouter} from "react-router-dom";
-import {isAuthSelector, isProfileLoadSimpleSelector, profileDataSimpleSelector} from "../../../../redux/selectors";
-
-let withRouterProfile = withRouter(Profile);
+import { isProfileLoadSimpleSelector, profileDataSimpleSelector} from "../../../../redux/selectors";
+import {withAuthRedirect} from "../../../../hoc/withAuthRedirect";
+import {compose} from "redux";
 
 let mapStateToProps = (state) => {
     return{
@@ -13,4 +13,8 @@ let mapStateToProps = (state) => {
     }
 };
 
-export default connect(mapStateToProps, {getProfileDataThunk})(withRouterProfile);
+ export default compose(
+     withAuthRedirect,
+     connect(mapStateToProps, {getProfileDataThunk}),
+     withRouter
+ )(Profile);

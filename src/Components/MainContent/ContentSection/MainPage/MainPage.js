@@ -2,10 +2,14 @@ import React from "react";
 import style from "./MainPage.module.css";
 import StatusContainer from "./Status/StatusContainer";
 import PostsContainer from "./Posts/PostsContainer";
+import {NavLink} from "react-router-dom";
+
 
 let MainPage = (props) => {
     return(
-        <div className={style['main-page']}>
+        <div
+
+            className={style['main-page']}>
             {!props.isAuth ?
                 <div className={style['no-logged-main-page']}>
                     <h3>until you log in to the site,<br/> a few words about the application</h3>
@@ -17,6 +21,7 @@ let MainPage = (props) => {
                         <li>Axios</li>
                         <li>Redux-thunk</li>
                         <li>Reselect</li>
+                        <li>Framer-motion</li>
                     </ul>
                     <p>used container functions:</p>
                     <ul>
@@ -31,7 +36,7 @@ let MainPage = (props) => {
                         <li>Form validation</li>
                         <li>Selectors</li>
                     </ul>
-                    <button>go</button>
+                    <NavLink to='/login'><button>go</button></NavLink>
                 </div> :
 
                 <div className={style['logged-main-page']}>

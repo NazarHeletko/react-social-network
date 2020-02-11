@@ -59,3 +59,6 @@ export const isUserLoadedSimpleSelector = (state) => {
 export const btnDisabledSimpleSelector = (state) => {
     return state.users.btnDisabled
 };
+export const initializedSimpleSelector = (state) => {
+    return state.app.initialized
+};

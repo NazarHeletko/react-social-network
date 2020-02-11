@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './NavigationSection.module.css';
 import NavHeaderContainer from "./NavHeader/NavHeaderContainer";
-import {Link} from "react-router-dom";
+import { NavLink} from "react-router-dom";
 
 let NavigationSection = (props) => {
     return(
@@ -9,9 +9,9 @@ let NavigationSection = (props) => {
             <NavHeaderContainer/>
             <div className={style['main-navigation']}>
                 <ul>
-                    <li><Link  to='/'>main</Link></li>
-                    <li><Link  to={`/profile/${props.uId}`}>profile</Link></li>
-                    <li><Link  to='/users'>users</Link></li>
+                    <li><NavLink activeClassName={style.active} exact to='/'>main</NavLink></li>
+                    <li><NavLink exact activeClassName={style.active} to={`/profile/${props.uId}`}>profile</NavLink></li>
+                    <li><NavLink  activeClassName={style.active} to='/users'>users</NavLink></li>
                 </ul>
             </div>
         </div>

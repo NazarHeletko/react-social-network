@@ -1,11 +1,13 @@
 import {connect} from 'react-redux';
 import Users from "./Users";
-import {followThunk, getUsersThunk, unfollowThunk} from "../../../../redux/users-reducer";
+import {followThunk, getUsersThunk, setActivePageAC, unfollowThunk} from "../../../../redux/users-reducer";
 import {
     btnDisabledSimpleSelector,
     isUserLoadedSimpleSelector,
     usersDataSimpleSelector
 } from "../../../../redux/selectors";
+import {compose} from "redux";
+import {withAuthRedirect} from "../../../../hoc/withAuthRedirect";
 
 let mapStateToProps = (state) => {
     return{
@@ -15,4 +17,7 @@ let mapStateToProps = (state) => {
     }
 };
 
-export default connect(mapStateToProps, {getUsersThunk, followThunk, unfollowThunk})(Users);
+export default compose(
+    withAuthRedirect,
+    connect(mapStateToProps, {getUsersThunk, followThunk, unfollowThunk, setActivePageAC}),
+)(Users)

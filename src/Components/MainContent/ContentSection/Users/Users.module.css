@@ -25,6 +25,11 @@
     margin-bottom: 5px;
 }
 
+.single-user a {
+    text-decoration: none;
+    color: #2e2e2e;
+}
+
 .single-user button {
     border: none;
     outline: none;

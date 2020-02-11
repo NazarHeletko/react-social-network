@@ -25,4 +25,10 @@
     color: #ffffff;
     text-transform: uppercase;
     text-decoration: none;
+    padding: 4px 8px;
+}
+
+.navigation-section ul li .active {
+    border: 1px solid #ff7014ad;
+    border-radius: 4px;
 }

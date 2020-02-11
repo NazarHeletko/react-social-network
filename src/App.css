@@ -1,3 +1,11 @@
 .App {
     background: #da9e772b;
 }
+.app-preloader-wrapper {
+    background: #d44a1ecc;
+    width: 100%;
+    height: 100vh;
+}
+.app-preloader-wrapper img {
+    height: 30px;
+}

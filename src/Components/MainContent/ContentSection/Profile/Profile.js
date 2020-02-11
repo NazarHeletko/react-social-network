@@ -1,11 +1,12 @@
 import React, {useEffect} from "react";
 import style from './Profile.module.css';
-import noPhotoUser from '../../../../assets/man.png';
+import noPhotoUser from '../../../../assets/anonymity.png';
 import Preloader from "../../../common/Preloader/Preloader";
 import facebookLogo from '../../../../assets/facebook.png';
 import instagramLogo from '../../../../assets/instagram.png';
 import twetterLogo from '../../../../assets/twitter.png';
 import githubLogo from '../../../../assets/github.png';
+
 
 let Profile = (props) => {
     useEffect(()=>{
@@ -17,7 +18,9 @@ let Profile = (props) => {
     let lookingJobExist = props.profileData.lookingForAJob;
     let descriptionExist = props.profileData.lookingForAJobDescription;
     return(
-        <div className={style['profile-wrapper']}>
+        <div
+
+            className={style['profile-wrapper']}>
             {props.isProfileLoad ?
                 <div className={style.profile}>
                     <img src={props.profileData.photos.large === null ? noPhotoUser : props.profileData.photos.large}/>

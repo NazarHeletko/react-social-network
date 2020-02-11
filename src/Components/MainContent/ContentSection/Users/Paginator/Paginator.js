@@ -8,7 +8,7 @@ let Paginator = ({portionSize = 10, totalUsers, usersOnPage, activePage,...props
         btnsArr.push(i);
     }
     let portionCount = Math.ceil(numberOfBtns/portionSize);
-    let [portionNumber, setPortionNumber] = useState(3);
+    let [portionNumber, setPortionNumber] = useState(1);
     let leftPortionPageNumber = (portionNumber - 1) * portionSize + 1;
     let rightPortionPageNumber = portionNumber * portionSize;
 
