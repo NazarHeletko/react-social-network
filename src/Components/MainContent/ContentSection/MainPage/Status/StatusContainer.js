@@ -2,8 +2,7 @@ import Status from "./Status";
 import {connect} from "react-redux";
 import {
     authUserIdSimpleSelector,
-    isStatusLoadingSimpleSelector,
-    statusTextSimpleSelector
+    isStatusLoadingSimpleSelector
 } from "../../../../../redux/selectors";
 import {getStatusThunk, setStatusThunk} from "../../../../../redux/status-reducer";
 
@@ -11,7 +10,7 @@ import {getStatusThunk, setStatusThunk} from "../../../../../redux/status-reduce
 let mapStateToProps = (state) => {
     return{
         isStatusLoading: isStatusLoadingSimpleSelector(state),
-        statusText: statusTextSimpleSelector(state),
+        app: state.app.initialized,
         uId: authUserIdSimpleSelector(state)
     }
 };

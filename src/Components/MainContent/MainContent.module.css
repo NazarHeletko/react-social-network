@@ -14,3 +14,34 @@
 .main-content h3 {
     margin: 0;
 }
+@media screen and (max-width: 1040px) {
+    .main-content {
+        width: 916px;
+    }
+}
+@media screen and (max-width: 930px) {
+    .main-content {
+        width: 798px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .main-content {
+        width: 712px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .main-content {
+        width: 592px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .main-content {
+        width: 490px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .main-content {
+        width: 316px;
+        flex-direction: column;
+    }
+}

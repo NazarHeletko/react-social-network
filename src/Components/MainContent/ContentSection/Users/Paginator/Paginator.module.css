@@ -32,3 +32,10 @@
     color: white !important;
     border: 1px solid transparent !important;
 }
+@media screen and (max-width: 600px) {
+    .page-btns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}

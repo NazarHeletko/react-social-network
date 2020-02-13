@@ -43,3 +43,21 @@
     box-shadow: 0px 0px 19px -5px rgba(119, 15, 16, 0.41);
     padding: 30px;
 }
+
+@media screen and (max-width: 600px) {
+    .logged-main-page h3 {
+        font-size: 15px;
+        margin-left: 22px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .logged-main-page h3 {
+        margin-top: 10px;
+    }
+    .no-logged-main-page h3 {
+        margin-top: 20px;
+    }
+    .no-logged-main-page button {
+        margin-bottom: 15px;
+    }
+}

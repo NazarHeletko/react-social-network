@@ -49,7 +49,7 @@ export const setStatusThunk = (status) => async (dispatch) => {
 };
 
 export const getStatusThunk = (userId) => async (dispatch) => {
-    dispatch(isStatusLoadingAC(false));
+
     let response = await statusData.getStatusApi(userId);
     dispatch(setUserStatusAC(response.data));
     dispatch(isStatusLoadingAC(true));

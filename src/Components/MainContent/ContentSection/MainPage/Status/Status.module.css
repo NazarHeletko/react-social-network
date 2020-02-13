@@ -56,3 +56,22 @@
 .preloader img {
     height: 30px;
 }
+@media screen and (max-width: 930px) {
+    .status-text, .status-field{
+        padding: 22px;
+    }
+    .status-text span {
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .status-text span {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .status-text span {
+        font-size: 14px;
+    }
+}

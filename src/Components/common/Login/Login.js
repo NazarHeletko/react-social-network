@@ -7,6 +7,7 @@ import {Redirect} from "react-router-dom";
 let Login = (props) => {
     let onSubmit = (formData) => {
         props.logInThunk(formData.login, formData.password, formData.rememberMe);
+        props.isAuthThunk();
     };
 
     if(props.isAuth === true) return <Redirect to='/' />;

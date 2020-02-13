@@ -25,7 +25,7 @@ let Profile = (props) => {
                 <div className={style.profile}>
                     <img src={props.profileData.photos.large === null ? noPhotoUser : props.profileData.photos.large}/>
                     <h2>{props.profileData.fullName}</h2>
-                    <p><span>About me: </span>span>{`${abutMeExist ? abutMeExist : 'no data'}`}</p>
+                    <p><span>About me: </span>{`${abutMeExist ? abutMeExist : 'no data'}`}</p>
                     <div className={style['social-btns']}>
                         <a href='http://facebook.com/'><img src={facebookLogo} /></a>
                         <a href='https://www.instagram.com/'><img src={instagramLogo} /></a>

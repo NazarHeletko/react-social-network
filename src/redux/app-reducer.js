@@ -1,4 +1,5 @@
 import {isAuthThunk} from './auth-reducer';
+import {getStatusThunk} from "./status-reducer";
 
 const INITIALIZED_SUCCESS = 'INITIALIZED_SUCCESS';
 
@@ -25,8 +26,9 @@ const initializedSucessAC = () => {
 };
 
 export const initializedSucessThunk = () => (dispatch) => {
+
     let firstPromise = dispatch(isAuthThunk());
-    Promise.all([firstPromise]).then(()=>{
+    Promise.all([ firstPromise]).then(()=>{
         dispatch(initializedSucessAC());
     })
 };

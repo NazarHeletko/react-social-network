@@ -29,11 +29,13 @@ const isAuthAC = (isAuth, authData) => {
     }
 };
 
-export const isAuthThunk = () => async (dispatch) => {
-    let response = await auth.isAuthApi();
-    if(response.data.resultCode === 0){
-        dispatch(isAuthAC(true, response.data.data));
-    }
+export const isAuthThunk = () =>  (dispatch) => {
+    return auth.isAuthApi().then(response =>{
+            if(response.data.resultCode === 0){
+                dispatch(isAuthAC(true, response.data.data));
+            }
+        }
+    );
 };
 
 export const logOutThunk = () => async (dispatch) => {

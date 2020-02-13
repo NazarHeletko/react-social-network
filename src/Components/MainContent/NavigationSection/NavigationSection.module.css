@@ -13,7 +13,6 @@
 
 .navigation-section ul {
     padding: 0;
-    text-align: center;
 }
 
 .navigation-section ul li {
@@ -28,7 +27,43 @@
     padding: 4px 8px;
 }
 
+.navigation-section ul li a img {
+    height: 15px;
+    position: relative;
+    bottom: 0;
+    margin-right: 4px;
+}
+
 .navigation-section ul li .active {
     border: 1px solid #ff7014ad;
     border-radius: 4px;
+}
+@media screen and (max-width: 600px) {
+    .navigation-section {
+        width: 17%;
+    }
+    .navigation-section ul li a {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .navigation-section {
+        height: 150px;
+        width: 100%;
+        justify-content: flex-end;
+    }
+    .navigation-section ul li a span {
+        display: none;
+    }
+    .navigation-section ul li a img {
+        margin: 0;
+    }
+    .navigation-section ul li a {
+        display: block;
+    }
+    .navigation-section ul {
+        display: flex;
+        width: 168px;
+        justify-content: space-around;
+    }
 }

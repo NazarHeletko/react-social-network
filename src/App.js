@@ -8,13 +8,15 @@ import Preloader from "./Components/common/Preloader/Preloader";
 import {initializedSucessThunk} from "./redux/app-reducer";
 import {initializedSimpleSelector} from "./redux/selectors";
 
+
 function App(props) {
       useEffect(()=>{
           props.initializedSucessThunk();
+
       },[]);
       if(!props.initialized) return <div className='app-preloader-wrapper'><Preloader /></div>;
       return (
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <div className="App">
                       <HeaderContainer/>
                       <MainContent/>

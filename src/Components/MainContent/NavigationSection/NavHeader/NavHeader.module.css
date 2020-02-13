@@ -44,3 +44,19 @@
     margin-top: 6px;
     margin-bottom: 0;
 }
+
+@media screen and (max-width: 930px) {
+    .nav-header p {
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .nav-header p {
+        font-size: 9px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .nav-header p {
+       display: none;
+    }
+}

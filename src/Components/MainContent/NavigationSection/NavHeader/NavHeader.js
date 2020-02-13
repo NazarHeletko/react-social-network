@@ -1,9 +1,11 @@
-import React from "react";
+import React  from "react";
 import style from './NavHeader.module.css';
 import noLogedUserAva from '../../../../assets/anonymity.png';
 import logedUserAva from '../../../../assets/man.png';
+import NavHeaderLocalData from "./NavHeaderLocalUserData";
 
 let NavHeader = (props) => {
+
     return(
         <div className={style['nav-header']}>
             {!props.isAuth ?
@@ -13,8 +15,7 @@ let NavHeader = (props) => {
                 </div> :
                 <div className={style['loged-user']}>
                     <img src={logedUserAva} alt="no loged user"/>
-                    <h4>{props.authData.login}</h4>
-                    <p>{props.authData.email}</p>
+                    {props.app ? <NavHeaderLocalData/> : null}
                 </div>
             }
 

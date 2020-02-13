@@ -1,6 +1,6 @@
 import {connect} from 'react-redux';
 import Login from "./Login";
-import {logInThunk} from "../../../redux/auth-reducer";
+import {isAuthThunk, logInThunk} from "../../../redux/auth-reducer";
 import {isAuthSelector} from "../../../redux/selectors";
 
 let mapStateToProps = (state) => {
@@ -9,4 +9,4 @@ let mapStateToProps = (state) => {
     }
 };
 
-export default connect(mapStateToProps, {logInThunk})(Login);
+export default connect(mapStateToProps, {logInThunk, isAuthThunk})(Login);
