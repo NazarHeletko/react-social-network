@@ -23,7 +23,7 @@ let Profile = (props) => {
             className={style['profile-wrapper']}>
             {props.isProfileLoad ?
                 <div className={style.profile}>
-                    <img src={props.profileData.photos.large === null ? noPhotoUser : props.profileData.photos.large}/>
+                    <img src={props.profileData.photos.large === null ? noPhotoUser : props.profileData.photos.large} alt='user photo'/>
                     <h2>{props.profileData.fullName}</h2>
                     <p><span>About me: </span>{`${abutMeExist ? abutMeExist : 'no data'}`}</p>
                     <div className={style['social-btns']}>

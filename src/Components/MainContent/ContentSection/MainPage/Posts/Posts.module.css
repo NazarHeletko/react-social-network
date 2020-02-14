@@ -45,6 +45,6 @@
 }
 @media screen and (max-width: 500px) {
     .custom-textarea textarea {
-        width: 236px;
+        width: 202px;
     }
 }

@@ -48,7 +48,7 @@
 }
 @media screen and (max-width: 500px) {
     .navigation-section {
-        height: 150px;
+        height: 170px;
         width: 100%;
         justify-content: flex-end;
     }

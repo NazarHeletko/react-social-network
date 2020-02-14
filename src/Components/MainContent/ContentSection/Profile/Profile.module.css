@@ -18,3 +18,8 @@
 .profile-wrapper img[alt="preloader"] {
     height: 42px;
 }
+@media screen and (max-width: 500px) {
+    .profile-wrapper img[alt="user photo"] {
+        height: 200px;
+    }
+}

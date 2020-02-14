@@ -7,8 +7,9 @@ import profilePng from '../../../assets/user.png';
 import usersPng from '../../../assets/group.png';
 
 let NavigationSection = (props) => {
+
     return(
-        <div style={props.isAuth ? {height: "178px"} : null} className={style['navigation-section']}>
+        <div className={style['navigation-section']}>
             <NavHeaderContainer/>
             <div className={style['main-navigation']}>
                 <ul>

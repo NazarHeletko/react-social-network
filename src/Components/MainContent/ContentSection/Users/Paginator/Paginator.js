@@ -2,6 +2,9 @@ import React, {useEffect, useState} from 'react';
 import style from './Paginator.module.css';
 
 let Paginator = ({portionSize = 10, totalUsers, usersOnPage, activePage,...props}) => {
+    if(document.body.clientWidth < 500){
+        portionSize = 4
+    }
     let numberOfBtns = Math.ceil(totalUsers/usersOnPage);
     let btnsArr = [];
     for(let i = 1; i <= numberOfBtns; i++){
