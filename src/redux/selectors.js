@@ -62,3 +62,6 @@ export const btnDisabledSimpleSelector = (state) => {
 export const initializedSimpleSelector = (state) => {
     return state.app.initialized
 };
+export const isPhotoUpdeted = (state) => {
+    return state.profileData.isPhotoUpdated
+};

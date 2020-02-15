@@ -15,11 +15,39 @@
 .profile-wrapper {
     height: 100%;
 }
+.change-photo {
+    display: none;
+}
+label {
+    display: block;
+    background: #69210a;
+    width: fit-content;
+    color: #ffffff;
+    position: relative;
+    padding: 1px 6px;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0px 10px 24px 0px rgba(105,33,10,1);
+}
+label img {
+    height: 18px;
+    position: relative;
+    bottom: -2px;
+    margin-right: 6px;
+}
 .profile-wrapper img[alt="preloader"] {
     height: 42px;
+}
+.photo-update-preloader {
+    height: 300px;
+    width: 300px;
 }
 @media screen and (max-width: 500px) {
     .profile-wrapper img[alt="user photo"] {
         height: 200px;
+    }
+    .photo-update-preloader {
+        height: 200px;
+        width: 200px;
     }
 }

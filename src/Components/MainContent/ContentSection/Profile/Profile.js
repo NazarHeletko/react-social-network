@@ -6,7 +6,7 @@ import facebookLogo from '../../../../assets/facebook.png';
 import instagramLogo from '../../../../assets/instagram.png';
 import twetterLogo from '../../../../assets/twitter.png';
 import githubLogo from '../../../../assets/github.png';
-
+import uploadPhoto from '../../../../assets/upload-photo.png';
 
 let Profile = (props) => {
     useEffect(()=>{
@@ -17,13 +17,31 @@ let Profile = (props) => {
     let abutMeExist = props.profileData.aboutMe;
     let lookingJobExist = props.profileData.lookingForAJob;
     let descriptionExist = props.profileData.lookingForAJobDescription;
+
+    const onMainPhotoSelected = (e) => {
+        if(e.target.files.length) {
+            props.setPhotoThunk(e.target.files[0]);
+        }
+    };
+
     return(
         <div
-
             className={style['profile-wrapper']}>
             {props.isProfileLoad ?
                 <div className={style.profile}>
-                    <img src={props.profileData.photos.large === null ? noPhotoUser : props.profileData.photos.large} alt='user photo'/>
+                    {props.isPhotoUpdated ?
+                        <img src={props.profileData.photos.large === null ? noPhotoUser : props.profileData.photos.large} alt='user photo'/>
+                        : <div className={style['photo-update-preloader']}><Preloader/></div>
+                    }
+
+                    {props.uId === parseInt(props.match.params.uId) ?
+                        <>
+                            <input onChange={onMainPhotoSelected} className={style['change-photo']} id='file' accept='image/*' type='file'/>
+                            < label htmlFor='file'>
+                            <img src={uploadPhoto} />add a photo
+                            </label>
+                        </> : null
+                    }
                     <h2>{props.profileData.fullName}</h2>
                     <p><span>About me: </span>{`${abutMeExist ? abutMeExist : 'no data'}`}</p>
                     <div className={style['social-btns']}>

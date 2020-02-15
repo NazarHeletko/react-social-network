@@ -29,8 +29,19 @@ export const statusData = {
     }
 };
 
-export const getUserProfile = (uId) => {
-    return instance.get(`profile/${uId}`);
+export const profile = {
+    getUserProfile (uId) {
+        return instance.get(`profile/${uId}`);
+    },
+    setProfilePhoto(photoFile){
+        const formData = new FormData();
+        formData.append('image', photoFile);
+        return instance.put(`profile/photo`, formData, {
+            headers: {
+                'Content-Type': 'multipart/form-data'
+            }
+        })
+    }
 };
 
 export const users = {
