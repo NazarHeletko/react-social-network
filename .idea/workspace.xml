@@ -3,9 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="e108baf9-fef8-419a-b224-a5dea956150f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/MainPage/Status/Status.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/MainPage/Status/Status.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/MainPage/Status/StatusContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/MainPage/Status/StatusContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/MainPage/Status/StatusForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/MainPage/Status/StatusForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/Profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/Profile/Profile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/Profile/Profile.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/Profile/Profile.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/Profile/ProfileContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/Profile/ProfileContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MainContent/NavigationSection/NavHeader/NavHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/NavigationSection/NavHeader/NavHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MainContent/NavigationSection/NavHeader/NavHeader.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/NavigationSection/NavHeader/NavHeader.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MainContent/NavigationSection/NavHeader/NavHeaderContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/NavigationSection/NavHeader/NavHeaderContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/common/Preloader/Preloader.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/common/Preloader/Preloader.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/profile-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profile-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/selectors.js" afterDir="false" />
@@ -34,13 +41,13 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/study/react/repetition/oles" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -92,7 +99,17 @@
       <workItem from="1581519550461" duration="6984000" />
       <workItem from="1581606223011" duration="18949000" />
       <workItem from="1581696155150" duration="5437000" />
-      <workItem from="1581760958533" duration="16727000" />
+      <workItem from="1581760958533" duration="25646000" />
+      <workItem from="1581796739953" duration="637000" />
+      <workItem from="1581844616605" duration="8073000" />
+      <workItem from="1581872671307" duration="4296000" />
+      <workItem from="1581936346547" duration="7815000" />
+      <workItem from="1582017480906" duration="8023000" />
+      <workItem from="1582103194939" duration="21995000" />
+      <workItem from="1582192180152" duration="5368000" />
+      <workItem from="1582203421577" duration="599000" />
+      <workItem from="1582280134696" duration="10717000" />
+      <workItem from="1582376785269" duration="18197000" />
     </task>
     <servers />
   </component>

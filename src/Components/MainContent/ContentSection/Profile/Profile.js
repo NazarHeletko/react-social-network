@@ -2,61 +2,53 @@ import React, {useEffect} from "react";
 import style from './Profile.module.css';
 import noPhotoUser from '../../../../assets/anonymity.png';
 import Preloader from "../../../common/Preloader/Preloader";
-import facebookLogo from '../../../../assets/facebook.png';
-import instagramLogo from '../../../../assets/instagram.png';
-import twetterLogo from '../../../../assets/twitter.png';
-import githubLogo from '../../../../assets/github.png';
 import uploadPhoto from '../../../../assets/upload-photo.png';
+import EditDataBtn from "./EditDataBtn/EditDataBtn";
+import ProfileMainContent from "./ProfileMainContent";
 
 let Profile = (props) => {
-    useEffect(()=>{
+
+    useEffect(() => {
         props.getProfileDataThunk(props.match.params.uId);
 
     }, [props.match.params.uId]);
 
-    let abutMeExist = props.profileData.aboutMe;
-    let lookingJobExist = props.profileData.lookingForAJob;
-    let descriptionExist = props.profileData.lookingForAJobDescription;
+
+
 
     const onMainPhotoSelected = (e) => {
-        if(e.target.files.length) {
+        if (e.target.files.length) {
             props.setPhotoThunk(e.target.files[0]);
         }
     };
 
-    return(
+    return (
+        <>
+        {props.isProfileLoad ?
         <div
             className={style['profile-wrapper']}>
-            {props.isProfileLoad ?
                 <div className={style.profile}>
+                    {props.match.params.uId === String(props.uId) ? <EditDataBtn/> : null}
                     {props.isPhotoUpdated ?
-                        <img src={props.profileData.photos.large === null ? noPhotoUser : props.profileData.photos.large} alt='user photo'/>
+                        <img
+                            src={props.profilePhoto ? props.profilePhoto : noPhotoUser}
+                            alt='user photo'/>
                         : <div className={style['photo-update-preloader']}><Preloader/></div>
                     }
 
                     {props.uId === parseInt(props.match.params.uId) ?
                         <>
-                            <input onChange={onMainPhotoSelected} className={style['change-photo']} id='file' accept='image/*' type='file'/>
+                            <input onChange={onMainPhotoSelected} className={style['change-photo']} id='file'
+                                   accept='image/*' type='file'/>
                             < label htmlFor='file'>
-                            <img src={uploadPhoto} />add a photo
+                                <img src={uploadPhoto}/>add a photo
                             </label>
                         </> : null
                     }
-                    <h2>{props.profileData.fullName}</h2>
-                    <p><span>About me: </span>{`${abutMeExist ? abutMeExist : 'no data'}`}</p>
-                    <div className={style['social-btns']}>
-                        <a href='http://facebook.com/'><img src={facebookLogo} /></a>
-                        <a href='https://www.instagram.com/'><img src={instagramLogo} /></a>
-                        <a href='https://twitter.com/'><img src={twetterLogo} /></a>
-                        <a href='https://github.com/'><img src={githubLogo} /></a>
-                    </div>
-                    <p><span>Looking for a job: </span>{`${lookingJobExist ? lookingJobExist : 'no data'}`}</p>
-                    <p><span>My skils: </span>{`${descriptionExist ? descriptionExist : 'no data'}`}</p>
-                </div> :
-                <Preloader/>
-            }
-        </div>
-    )
-};
+                    <ProfileMainContent/>
+                        </div>
+                </div> : <Preloader/> } </>
+                )
+            };
 
-export default Profile;
+            export default Profile;

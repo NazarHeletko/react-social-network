@@ -1,5 +1,6 @@
 .profile {
     padding: 30px;
+    position: relative;
 }
 .profile h2 {
     margin-top: 15px;
@@ -36,12 +37,81 @@ label img {
     margin-right: 6px;
 }
 .profile-wrapper img[alt="preloader"] {
-    height: 42px;
+    height: 30px;
 }
 .photo-update-preloader {
     height: 300px;
     width: 300px;
 }
+.edit-profile-info {
+    position: absolute;
+    width: auto;
+    right: 0;
+    box-shadow: 0px 0px 19px -5px rgba(119, 15, 16, 0.41);
+    padding: 3px 6px 0px 6px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.edit-profile-info span {
+    margin-left: 2px;
+}
+.edit-profile-info img {
+    height: 20px;
+}
+
+.edit-profile-form {
+    margin-top: 40px;
+}
+.edit-profile-form input {
+    margin-top: 6px;
+}
+.edit-profile-form img {
+    height: 20px;
+    width: 20px;
+}
+.edit-profile-form input {
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 19px -5px rgba(119, 15, 16, 0.41);
+    padding: 6px;
+    margin-bottom: 8px;
+    width: 80%;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.social {
+    display: flex !important;
+    flex-direction: row !important;
+}
+.social span {
+    margin-left: 6px;
+}
+.edit-profile-form div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+input[type=checkbox] {
+    width: auto;
+}
+.profile-main-content img[alt="preloader"] {
+    margin-top: 90px ;
+}
+.full-name-error input{
+    border: 1px solid #ff000078;
+}
+.full-name-error span {
+    color: #ff0000b8;
+}
+
+@media screen and (max-width: 720px) {
+    .edit-profile-info {
+        bottom: 0.5%;
+        right: auto;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .profile-wrapper img[alt="user photo"] {
         height: 200px;

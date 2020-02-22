@@ -1,10 +1,15 @@
-import React  from "react";
+import React, {useEffect} from "react";
 import style from './NavHeader.module.css';
 import noLogedUserAva from '../../../../assets/anonymity.png';
 import logedUserAva from '../../../../assets/man.png';
 import NavHeaderLocalData from "./NavHeaderLocalUserData";
+import Preloader from "../../../common/Preloader/Preloader";
 
 let NavHeader = (props) => {
+
+    useEffect(()=>{
+        props.getProfilePhotoThunk(props.uId);
+    },[props.profilePhoto]);
 
     return(
         <div className={style['nav-header']}>
@@ -14,7 +19,10 @@ let NavHeader = (props) => {
                         <p>Hi, there! To see more functionality, please, enter the site.</p>
                 </div> :
                 <div className={style['loged-user']}>
-                    <img src={logedUserAva} alt="no loged user"/>
+                    {props.isOwnPhotoLoaded ?
+                        <img src={props.profilePhoto ? props.profilePhoto : noLogedUserAva} alt="no loged user"/>
+                        : <div className={style['preloader-own-photo-wrpr']}><Preloader/></div>
+                    }
                     {props.app ? <NavHeaderLocalData/> : null}
                 </div>
             }

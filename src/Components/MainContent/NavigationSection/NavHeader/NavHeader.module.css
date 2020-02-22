@@ -28,10 +28,19 @@
     margin-top: 14px;
     margin-bottom: 0;
 }
+.preloader-own-photo-wrpr {
+    height: 62px;
+    width: 62px;
+}
 .loged-user {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.loged-user img[alt="preloader"]{
+    height: 30px;
+    width: 30px;
 }
 
 .loged-user h4 {

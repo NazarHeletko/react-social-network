@@ -28,7 +28,7 @@ let Status = (props) => {
                 <div className={style.status}>
                     {activatingMode ?
                         <div className={style['status-field']}>
-                            <StatusForm setActivatingModeCallBack={setActivatingModeCallBack} onSubmit={onSubmit}/>
+                            <StatusForm initialValues={{status: props.statusValue}}  setActivatingModeCallBack={setActivatingModeCallBack} onSubmit={onSubmit}/>
                         </div>
                         :
                         <div className={style['status-text']}>

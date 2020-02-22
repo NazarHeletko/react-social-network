@@ -16,7 +16,7 @@ const maxLength71 = maxLenghtCreator(71);
 
 let StatusForm = (props) => {
     return(
-        <form onSubmit={props.handleSubmit}>
+        <form  onSubmit={props.handleSubmit}>
             <Field validate={[maxLength71]} autoFocus={true} onBlur={()=>{
                 props.setActivatingModeCallBack(false);
                 props.handleSubmit();

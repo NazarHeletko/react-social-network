@@ -34,6 +34,9 @@ export const postsSimpleSelector = (state) => {
 export const profileDataSimpleSelector = (state) => {
     return state.profileData.profileData;
 };
+export const profilePhotoSimpleSelector = (state) => {
+    return state.profileData.ownPhoto;
+};
 export const isProfileLoadSimpleSelector = (state) => {
     return state.profileData.isProfileLoad;
 };
@@ -64,4 +67,7 @@ export const initializedSimpleSelector = (state) => {
 };
 export const isPhotoUpdeted = (state) => {
     return state.profileData.isPhotoUpdated
+};
+export const isOwnPhotoLoadedSimple = (state) => {
+    return state.profileData.isOwnPhotoLoaded
 };
