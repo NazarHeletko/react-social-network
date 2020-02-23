@@ -3,19 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="e108baf9-fef8-419a-b224-a5dea956150f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/MainPage/Status/Status.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/MainPage/Status/Status.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/MainPage/Status/StatusContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/MainPage/Status/StatusContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/MainPage/Status/StatusForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/MainPage/Status/StatusForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/Profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/Profile/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/Profile/Profile.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/Profile/Profile.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/Profile/ProfileContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/ContentSection/Profile/ProfileContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/MainContent/NavigationSection/NavHeader/NavHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/NavigationSection/NavHeader/NavHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MainContent/NavigationSection/NavHeader/NavHeader.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/NavigationSection/NavHeader/NavHeader.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MainContent/NavigationSection/NavHeader/NavHeaderContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/NavigationSection/NavHeader/NavHeaderContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/common/Preloader/Preloader.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/common/Preloader/Preloader.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/common/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/common/Login/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/common/Login/Login.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/common/Login/Login.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/common/Login/LoginContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/common/Login/LoginContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/common/Login/LoginForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/common/Login/LoginForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/profile-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profile-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/selectors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/auth-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/auth-reducer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +103,8 @@
       <workItem from="1582192180152" duration="5368000" />
       <workItem from="1582203421577" duration="599000" />
       <workItem from="1582280134696" duration="10717000" />
-      <workItem from="1582376785269" duration="18197000" />
+      <workItem from="1582376785269" duration="20982000" />
+      <workItem from="1582448761364" duration="7966000" />
     </task>
     <servers />
   </component>

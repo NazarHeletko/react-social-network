@@ -9,7 +9,7 @@ let NavHeader = (props) => {
 
     useEffect(()=>{
         props.getProfilePhotoThunk(props.uId);
-    },[props.profilePhoto]);
+    },[props.profilePhoto, props.uId]);
 
     return(
         <div className={style['nav-header']}>

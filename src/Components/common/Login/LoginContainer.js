@@ -5,7 +5,9 @@ import {isAuthSelector} from "../../../redux/selectors";
 
 let mapStateToProps = (state) => {
     return{
-        isAuth: isAuthSelector(state)
+        isAuth: isAuthSelector(state),
+        showCaptcha: state.isAuth.showCaptcha,
+        captchaUrl: state.isAuth.captchaUrl
     }
 };
 

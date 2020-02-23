@@ -15,8 +15,11 @@ export const auth = {
     logOut() {
         return instance.delete('auth/login');
     },
-    logInApi(email, password, rememberMe) {
-        return instance.post('auth/login', {email, password, rememberMe});
+    logInApi(email, password, rememberMe, captcha) {
+        return instance.post('auth/login', {email, password, rememberMe, captcha});
+    },
+    getCaptchaApi(){
+        return instance.get('security/get-captcha-url');
     }
 };
 

@@ -6,7 +6,7 @@ import {Redirect} from "react-router-dom";
 
 let Login = (props) => {
     let onSubmit = (formData) => {
-        props.logInThunk(formData.login, formData.password, formData.rememberMe);
+        props.logInThunk(formData.login, formData.password, formData.rememberMe, formData.captcha);
         props.isAuthThunk();
     };
 
@@ -15,7 +15,7 @@ let Login = (props) => {
     return(
         <div className={style.login}>
                 <h1>You need to login</h1>
-                <LoginForm onSubmit={onSubmit} />
+                <LoginForm showCaptcha={props.showCaptcha} captchaUrl={props.captchaUrl} onSubmit={onSubmit} />
         </div>
     )
 };

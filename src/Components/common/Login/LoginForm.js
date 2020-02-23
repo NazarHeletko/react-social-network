@@ -23,6 +23,12 @@ let LoginForm = (props) => {
                 <Field component='input' type='checkbox' name='rememberMe'/>
             </div>
             <p className={style['incorect']}>{props.error}</p>
+            {props.showCaptcha ?
+                <div className={style.capthca}>
+                    <img src={props.captchaUrl} />
+                    <Field validate={[requiredField]} placeholder='enter the characters' component={InputWrapper} name='captcha'/>
+                </div> : null
+            }
             <button>Login</button>
         </form>
     )
