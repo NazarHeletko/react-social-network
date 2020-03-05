@@ -1,7 +1,6 @@
 import React, {useEffect} from "react";
 import style from './NavHeader.module.css';
 import noLogedUserAva from '../../../../assets/anonymity.png';
-import logedUserAva from '../../../../assets/man.png';
 import NavHeaderLocalData from "./NavHeaderLocalUserData";
 import Preloader from "../../../common/Preloader/Preloader";
 

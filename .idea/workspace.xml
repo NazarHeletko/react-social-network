@@ -4,12 +4,7 @@
     <list default="true" id="e108baf9-fef8-419a-b224-a5dea956150f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/MainContent/NavigationSection/NavHeader/NavHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent/NavigationSection/NavHeader/NavHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/common/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/common/Login/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/common/Login/Login.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/common/Login/Login.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/common/Login/LoginContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/common/Login/LoginContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/common/Login/LoginForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/common/Login/LoginForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/auth-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/auth-reducer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,7 +99,11 @@
       <workItem from="1582203421577" duration="599000" />
       <workItem from="1582280134696" duration="10717000" />
       <workItem from="1582376785269" duration="20982000" />
-      <workItem from="1582448761364" duration="7966000" />
+      <workItem from="1582448761364" duration="9762000" />
+      <workItem from="1582564772943" duration="1257000" />
+      <workItem from="1582643891962" duration="1801000" />
+      <workItem from="1582729542287" duration="505000" />
+      <workItem from="1583425011914" duration="575000" />
     </task>
     <servers />
   </component>

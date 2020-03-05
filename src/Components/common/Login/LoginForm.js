@@ -16,8 +16,8 @@ let InputWrapper = ({input, meta, ...props}) => {
 let LoginForm = (props) => {
     return(
         <form onSubmit={props.handleSubmit}>
-            <Field validate={[requiredField]} placeholder='Login' component={InputWrapper} name='login'/>
-            <Field validate={[requiredField]} placeholder='Password' component={InputWrapper} name='password'/>
+            <span>Use for enter: somewhereseen@gmail.com</span><Field validate={[requiredField]} placeholder='Login' component={InputWrapper} name='login'/>
+            <span>Use for enter: forever</span><Field validate={[requiredField]} placeholder='Password' component={InputWrapper} name='password'/>
             <div className={style['remember-me']}>
                 <span>Remeber me:</span>
                 <Field component='input' type='checkbox' name='rememberMe'/>
